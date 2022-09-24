@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title> Simulatin </title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.10/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+</head>
+
+<body>
+<a-scene>
+    <a-assets>
+        <img id="Purple" src="Purple.jpeg">
+      </a-assets>
+      <a-sky src="#Purple"></a-sky>
+
+      <a-box position="-1 0.5 -20" rotation="0 0 0" color="Blue" scale="100 7 5" static-body></a-box>
+      <a-box position="10 0.5 -5" rotation="0 0 0" color="Blue" scale="10 7 100" static-body></a-box>
+      <a-box position="-10 0.5 -5" rotation="0 0 0" color="Blue" scale="10 7 100"></a-box>
+      <a-box position="-1 0.5 20" rotation="0 0 0" color="Blue" scale="100 7 5"></a-box>
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="#808080"></a-plane>
+      
+    </a-scene>
+</body>
+</html>
